@@ -3,7 +3,7 @@
   <div class="list-container">
     <div class="sortList clearfix">
       <div class="center">
-          <sliderLoop :bannerlist="bannerList"></sliderLoop>
+          <sliderLoop :bannerList="bannerList"></sliderLoop>
         <!--banner轮播-->
         <!-- <div class="swiper-container" ref="bannerSwiper">
           <div class="swiper-wrapper">
@@ -112,6 +112,7 @@ import "swiper/css/swiper.min.css";
 import { mapState } from "vuex";
 export default {
   name: "ListContainer",
+ 
   mounted() {
     // setTimeout(() => {
     //   new Swiper(this.$refs.bannerSwiper, {
