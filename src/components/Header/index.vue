@@ -64,7 +64,11 @@ export default {
             let location = {
                 name:'search',
                 params:{keyword:this.keyword || undefined},
-                query:{keyword2:this.keyword.toUpperCase()}
+                // query:{keyword2:this.keyword.toUpperCase()}
+            }
+            let {query} = this.$route
+            if(query){
+                location.query = query
             }
             this.$router.push(location)
             // 1.解决方案一:NavigationDuplicated

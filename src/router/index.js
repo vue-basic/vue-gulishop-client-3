@@ -40,17 +40,17 @@ export default new VueRouter({
             component:Home
         },
         {
-            path:'/search/:keyword',
+            path:'/search/:keyword?',
             component:Search,
             name:'search',
             // props:true
             // props:{name:'zhaoliying'}
-            props(route){
-                return {
-                    keyword:route.params.keyword,
-                    keyword2:route.query.keyword2
-                }
-            }
+            // props(route){
+            //     return {
+            //         keyword:route.params.keyword,
+            //         keyword2:route.query.keyword2
+            //     }
+            // }
         },
         {
             path:'/login',
